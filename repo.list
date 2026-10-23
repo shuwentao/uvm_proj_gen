@@ -1,0 +1,19 @@
+# =============================================================================
+# File    : uvm_proj_gen/repo.list
+# Purpose : 可用的 GitHub 仓库清单（按需勾选，用 # 注释掉即可临时禁用）
+#
+# 格式（竖线分隔，5 列）:
+#   名称 | 本地路径 | GitHub URL | 说明 | 默认启用(1/0)
+#
+# 新增一个 VIP 只需两步：
+#   1) 在下面加一行
+#   2) 建 templates/repo_fragments/<名称>.frag（filelist 片段）
+#      可选：<名称>.mk（Makefile 变量）、<名称>.flags（DEFS/PLUS）
+# =============================================================================
+
+uvm_base | lib/uvm_base | git@github.com:shuwentao/uvm_base.git | 通用 UVM 母版库（必选底座）        | 1
+dvp_vip  | lib/dvp_vip  | git@github.com:shuwentao/dvp_vip.git  | DVP 测试 IP（BFM + UVM agent）     | 0
+
+# —— 以下为预留示例，去掉注释即可启用（需同时提供对应 fragment 与模板）——
+# axi_vip  | lib/axi_vip  | git@github.com:shuwentao/axi_vip.git  | AXI VIP（待实现）                 | 0
+# spi_vip  | lib/spi_vip  | git@github.com:shuwentao/spi_vip.git  | SPI VIP（待实现）                 | 0
