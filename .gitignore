@@ -1,0 +1,7 @@
+# 生成器本身不产生编译产物，忽略编辑器和临时文件
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+__pycache__/
